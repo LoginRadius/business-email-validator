@@ -2984,8 +2984,8 @@ var BusinessEmailValidtor = (function() {
 
 	module.validate = function (email) {
 		if (email.indexOf('@') > 0 && email.indexOf('@') < email.length - 3) {
-			var emailDomain = split('@')[1];
-			return !!blockedEmailServices[emailDomain];
+			var emailDomain = email.split('@')[1];
+			return !blockedEmailServices[emailDomain];
 		}
 		return false;
 	}

@@ -2207,6 +2207,7 @@ var BusinessEmailValidtor = (function() {
 		"mailgenie.net" : true,
 		"mailhaven.com" : true,
 		"mailhood.com" : true,
+		"mailinator.com" : true,		
 		"mailingweb.com" : true,
 		"mailisent.com" : true,
 		"mailite.com" : true,

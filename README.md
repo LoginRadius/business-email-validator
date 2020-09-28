@@ -7,7 +7,7 @@ Help you to eliminate free email services in signup process to capture more pote
 1. **For Free email list** : Welcome contributor to add free email services to list, just form and edit '\src\freeEmailService.json' file only and drop a pull request.
 2. **For helper libraries** : Create/Improve helpers libraries and make sure to add sample and drop a pull request.
 
-### To DO
+### To Do
 1. Wrapper for C#, Java, PHP, Ruby, Python, NodeJs etc.
 2. Improve list
 3. Automated grunt task for magnification JS helper library, to distribute files to wrapper directory etc.

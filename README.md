@@ -8,7 +8,7 @@ Help you to eliminate free email services in signup process to capture more pote
 2. **For helper libraries** : Create/Improve helpers libraries and make sure to add sample and drop a pull request.
 
 ### To DO
-1. Wrapper for C#, Java, PHP, Ruby, Python, NodeJs etc.
+1. Wrapper for C#, Java, Ruby, Python, NodeJs etc.
 2. Improve list
 3. Automated grunt task for magnification JS helper library, to distribute files to wrapper directory etc.
 

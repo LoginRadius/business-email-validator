@@ -1,4 +1,4 @@
-# Ruby Wrapper Buisness Email Validator
+# Ruby Wrapper Business Email Validator
 
 ## Usage
 

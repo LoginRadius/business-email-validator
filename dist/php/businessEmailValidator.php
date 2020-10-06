@@ -2,19 +2,6 @@
 
 class BusinessEmailValidator
 {
-
-	/**
-	* Used to load list of blocked domains from local JSON file.
-	* @access private
-	* @return array
-	*/
-	private function listBlocked()
-	{
-		$path = 'src/freeEmailService.json';
-		file_exists($path) or die("Error: file 'freeEmailService.json' not found!");
-		return (array) json_decode(file_get_contents($path), true);			
-	}
-
 	/**
 	* Used to check if provided email address is in list of blocked domains
 	* @access public
@@ -23,25 +10,38 @@ class BusinessEmailValidator
 	* @example 'john@doe.com'
 	* @return bool
 	*/
-	public function isBlocked($email)
-	{
-		filter_var($email, FILTER_VALIDATE_EMAIL) or die("Not a valid email address!");
-		$list_blocked = $this->listBlocked();
-		if(is_array($list_blocked) && filter_var($email, FILTER_VALIDATE_EMAIL))
-		{
-			$email_domain = explode('@', $email);
-		    $email_domain = end($email_domain);
-		    
-		    foreach ($list_blocked as $domain => $blocked)
-		    {
-		    	if($email_domain === $domain)
-		    	{
-		    		return true;
-		    	}
-		    }
-		    return false;
-		}else{
-			echo "Not a valid email address!";
-		}
+	public function isBlocked($email = '') {
+		try {
+
+		    // Domains list path
+            $path = 'src/freeEmaislService.json';
+
+            // Check if file exist
+            if(file_exists($path) === FALSE) throw new Exception("error: File '{$path}' not found!");
+
+            // Check if provided email is valid
+            if(filter_var($email, FILTER_VALIDATE_EMAIL) === FALSE) throw new Exception("error: Email address '{$email}' is not valid!");
+
+            // Convert json string to array
+            $list_blocked = (array) json_decode(file_get_contents($path), true);
+
+            // Get domain from email address
+            $email_split = explode('@', $email);
+            $email_domain = end($email_split);
+
+            // Loop list to search for an email inside
+            foreach ($list_blocked as $domain => $blocked) {
+                if($email_domain === $domain) {
+                    // email is blocked
+                    return true;
+                }
+            }
+            // Email's domain is not blocked
+            return false;
+
+        }catch (Exception $e){
+            return false;
+        }
+
 	}
 }

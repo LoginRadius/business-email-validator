@@ -21,7 +21,7 @@ public class BusinessEmailValidator {
 			JSONObject jsonObject = (JSONObject)parser.parse(jsonFileReader);
 			jsonFileReader.close();
 
-			return (boolean)jsonObject.get(domain);
+			return !(boolean)jsonObject.get(domain);
 		} catch (NullPointerException e) {
 		} catch (Exception e) {
 			e.printStackTrace();

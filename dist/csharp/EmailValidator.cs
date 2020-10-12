@@ -40,7 +40,7 @@ namespace BusinessEmailValidator
                 foreach (var domain in domainList)
                 {
                     //Check for free email domain
-                    if (emailDomain == domain.Key)
+                    if (emailDomain.ToLower() == domain.Key.ToLower())
                     {
                         error = "Free email domain";
                         return true;

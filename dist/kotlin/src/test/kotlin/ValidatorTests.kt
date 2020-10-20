@@ -9,7 +9,7 @@ object ValidatorTests : Spek( {
             "valid@gmail.com" to true,
             "valid@yahoo.com" to true,
             "qwerty" to false,
-            "asdf@asdf@asdf" to false,
+            "asdf@asdf@asdf" to false
         ).forEach { (input, expectedResult) ->
             describe("Testing for input: $input") {
                 it ("Validates to $expectedResult") {

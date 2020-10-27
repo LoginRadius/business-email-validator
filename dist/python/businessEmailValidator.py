@@ -32,3 +32,5 @@ def validate(email):
             return True
     return False
 
+if __name__ == "__main__":
+    validate(sys.argv[1])

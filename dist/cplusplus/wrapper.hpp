@@ -22,7 +22,7 @@ std::vector<std::string> split (const std::string &s, char delim) {
 
 namespace wrapper {
   bool is_free(std::string email){
-    std::ifstream fin("free_email_service.json");
+    std::ifstream fin("../../src/free_email_service.json");
     json domains = json::parse(fin);
 
     std::vector<std::string> v = split(email, '@');

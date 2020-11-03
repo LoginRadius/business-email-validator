@@ -15,7 +15,7 @@ class BusinessEmailValidator
         try {
 
             // Domains list path
-            $path = 'src/freeEmaislService.json';
+            $path = 'src/freeEmailService.json';
 
             // Check if file exist
             if (file_exists($path) === FALSE) throw new Exception("error: File '{$path}' not found!");

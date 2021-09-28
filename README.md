@@ -16,6 +16,10 @@ Please check the [contributing guide](CONTRIBUTING.md) to become a contributor.
 2. Improve the list
 3. Automated grunt task for magnification JS helper library, to distribute files to wrapper directory etc.
 
+## License
+
+For more information on licensing, please refer to [License](https://github.com/LoginRadius/business-email-validator/blob/master/LICENSE)
+
 ---
 
 Thanks to:

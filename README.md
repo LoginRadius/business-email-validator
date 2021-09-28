@@ -6,14 +6,14 @@ Help you to eliminate free email services in signup process to capture more pote
 
 ## Contribution
 
-1. **For Free email list** : Welcome contributor to add free email services to list, just form and edit '\src\freeEmailService.json' file only and drop a pull request.
-2. **For helper libraries** : Create/Improve helpers libraries and make sure to add sample and drop a pull request.
+We appreciate all kinds of contributions from anyone, be it finding an issue or writing a blog.
 
+Please check the [contributing guide](CONTRIBUTING.md) to become a contributor.
 
 ## TODO
 
-1. Wrapper for C#, Java, PHP, Ruby, Python, NodeJs etc.
-2. Improve list
+1. Wrapper for C#, Java, PHP, Ruby, Python, NodeJs or any other technology.
+2. Improve the list
 3. Automated grunt task for magnification JS helper library, to distribute files to wrapper directory etc.
 
 ---

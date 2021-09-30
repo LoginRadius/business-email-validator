@@ -15,7 +15,7 @@ def if_exist(email,email_list):
 
 # Function to save all domain names in a list
 def open_file():
-    fileDir = os.path.abspath('../..')
+    fileDir = os.path.abspath('./')
     filename = os.path.join(fileDir,'src/freeEmailService.json')
     print(filename)
     file1=open(filename,"r")
@@ -29,6 +29,9 @@ def validate(email):
     if(pos>0 and pos<len(email)-3):
         email_domain = email[pos+1 : ]
         if(if_exist(email_domain,email_list)==True):
-            return True
+            return "True"
     return False
 
+if __name__ == '__main__':
+    email = str(input("Enter an Business Email: "))
+    validate(email)

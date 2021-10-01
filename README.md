@@ -13,7 +13,7 @@ Please check the [contributing guide](CONTRIBUTING.md) to become a contributor.
 ## TODO
 
 1. Wrapper for C#, Java, PHP, Ruby, Python, NodeJs or any other technology.
-2. Improve the list
+2. Improve the list.
 3. Automated grunt task for magnification JS helper library, to distribute files to wrapper directory etc.
 
 ## License

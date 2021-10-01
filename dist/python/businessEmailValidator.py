@@ -35,3 +35,13 @@ def validate(email):
             return True
     return False
 
+
+# validate a list of email and return in dict
+def validate_list(entry_list=[]):
+    email_dict = {}
+    for entry in entry_list:
+        try:
+            email_dict[entry] = validate(entry)
+        except:
+            email_dict[entry] = False
+    return email_dict

@@ -33,3 +33,16 @@ def validate(email)
     end
     return false
 end
+
+# main takes user input and validates it to be valid/invalid
+def main()
+    puts "Enter an Business Email: "
+    email = gets.chomp
+    if validate email
+        puts "Given email is Valid"
+    else
+        puts "Given email is Invalid"
+    end
+end
+
+main

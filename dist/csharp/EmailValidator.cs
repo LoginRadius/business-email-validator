@@ -14,9 +14,9 @@ namespace BusinessEmailValidator
         public static Dictionary<string, bool> LoadJson()
         {
             Dictionary<string, bool> domainListItems = null;
-            using (StreamReader r = new StreamReader(@"src\freeEmailService.json"))
+            using (var r = new StreamReader(@"src\freeEmailService.json"))
             {
-                string json = r.ReadToEnd();
+                var json = r.ReadToEnd();
                 domainListItems = JsonConvert.DeserializeObject<Dictionary<string,bool>>(json);
             }
             return domainListItems;
@@ -40,7 +40,7 @@ namespace BusinessEmailValidator
                 foreach (var domain in domainList)
                 {
                     //Check for free email domain
-                    if (emailDomain.ToLower() == domain.Key.ToLower())
+                    if (String.Equals(emailDomain, domain.Key, StringComparison.OrdinalIgnoreCase))
                     {
                         error = "Free email domain";
                         return true;

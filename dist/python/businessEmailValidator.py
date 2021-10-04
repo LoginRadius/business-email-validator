@@ -15,11 +15,11 @@ def if_exist(email,email_list):
 
 # Function to save all domain names in a list
 def open_file():
-    fileDir = os.path.abspath('../..')
+    fileDir = os.path.abspath('../..') #redirecting file path
     filename = os.path.join(fileDir,'src/freeEmailService.json')
-    print(filename)
+    print(filename) 
     file1=open(filename,"r")
-    email_list = json.load(file1)
+    email_list = json.load(file1) #loading email list
     return email_list
 
 # Function to validate email
@@ -28,7 +28,7 @@ def validate(email):
     pos = email.find('@')
     if(pos>0 and pos<len(email)-3):
         email_domain = email[pos+1 : ]
-        if(if_exist(email_domain,email_list)==True):
+        if(if_exist(email_domain,email_list)==True): #condition check for validation email
             return True
     return False
 

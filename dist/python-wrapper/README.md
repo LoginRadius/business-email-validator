@@ -31,11 +31,11 @@ except ValidEmail or ValidBusinessEmail:
   
   Prints `True` when it is a `valid email`.
 ```python
-print(ValidateBusinessMails(examplemail@domain.com).email_verifier)
+print(ValidateBusinessMails(examplemail@domain.com).email_verifier))
 ```
 - business_email_verifier `(Property)`:
   
   Prints `True` when it is a `valid business email`.
 ```python
-print(ValidateBusinessMails(examplemail@domain.com).business_email_verifier)
+print(ValidateBusinessMails(examplemail@domain.com).business_email_verifier))
 ```

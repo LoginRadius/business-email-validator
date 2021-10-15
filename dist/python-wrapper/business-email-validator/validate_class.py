@@ -13,13 +13,13 @@ class ValidateBusinessMails:
     '''
         This class provides 3 properties and 2 independent functions
         - Properties: email, email_verifier, business_email_verifier
-        - Independent Functions: email_verifier, business_email_verifier
+        - Independent Functions: validate_email, validate_business_email
 
         Usage:
         - validate_email:
             ValidateBusinessMails.validate_email(examplemail@domain.com)
         - validate_business_email:
-            ValidateBusinessMails.validate_email(examplemail@domain.com)
+            ValidateBusinessMails.validate_business_email(examplemail@domain.com)
 
         - email_verifier:
             ValidateBusinessMails(examplemail@domain.com).email_verifier

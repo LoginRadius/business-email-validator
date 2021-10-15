@@ -9,7 +9,7 @@ __path__ = __import__('pkgutil').extend_path(__path__, __name__)
 from typing import NamedTuple, Literal
 
 from .validate_class import *
-from .errors import *
+from .classes import *
 
 class VersionInfo(NamedTuple):
     major: int

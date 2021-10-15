@@ -1,5 +1,6 @@
-from setuptools import setup
 import re
+
+from setuptools import setup
 
 pakage_name = 'business-email-validator'
 requirements = []
@@ -11,7 +12,8 @@ except:
 
 version = ''
 with open(f'{pakage_name}/__init__.py') as f:
-    version = re.search(r'^__version__\s*=\s*[\'"]([^\'"]*)[\'"]', f.read(), re.MULTILINE).group(1)
+    version = re.search(
+        r'^__version__\s*=\s*[\'"]([^\'"]*)[\'"]', f.read(), re.MULTILINE).group(1)
 
 if not version:
     raise RuntimeError('version is not set')
@@ -46,8 +48,8 @@ setup(name=pakage_name,
       author='Dhruvacube',
       url='https://github.com/LoginRadius/business-email-validator',
       project_urls={
-        "Documentation": "https://github.com/LoginRadius/business-email-validator",
-        "Issue tracker": "https://github.com/LoginRadius/business-email-validator/issues",
+          "Documentation": "https://github.com/LoginRadius/business-email-validator",
+          "Issue tracker": "https://github.com/LoginRadius/business-email-validator/issues",
       },
       version=version,
       packages=packages,
@@ -60,19 +62,19 @@ setup(name=pakage_name,
       extras_require=extras_require,
       python_requires='>=3.7',
       classifiers=[
-        'Development Status :: 5 - Production/UnStable',
-        'License :: OSI Approved :: GNU General Public License v2.0',
-        'Intended Audience :: Developers',
-        'Natural Language :: English',
-        'Operating System :: OS Independent',
-        "Programming Language :: Python :: 3",
-        "Programming Language :: Python :: 3.7",
-        'Programming Language :: Python :: 3.8',
-        'Programming Language :: Python :: 3.9',
-        'Topic :: Internet',
-        'Topic :: Software Development :: Libraries',
-        'Topic :: Software Development :: Libraries :: Python Modules',
-        'Topic :: Utilities',
-        'Typing :: Typed',
+          'Development Status :: 5 - Production/UnStable',
+          'License :: OSI Approved :: GNU General Public License v2.0',
+          'Intended Audience :: Developers',
+          'Natural Language :: English',
+          'Operating System :: OS Independent',
+          "Programming Language :: Python :: 3",
+          "Programming Language :: Python :: 3.7",
+          'Programming Language :: Python :: 3.8',
+          'Programming Language :: Python :: 3.9',
+          'Topic :: Internet',
+          'Topic :: Software Development :: Libraries',
+          'Topic :: Software Development :: Libraries :: Python Modules',
+          'Topic :: Utilities',
+          'Typing :: Typed',
       ]
-)
+      )

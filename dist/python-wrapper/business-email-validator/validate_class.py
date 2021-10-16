@@ -1,10 +1,10 @@
-from future import __annotations__
-
 import functools
 import os
 import re
 from pathlib import Path
 from typing import Optional, Union
+
+from future import __annotations__
 
 from .classes import *
 
@@ -64,7 +64,7 @@ class ValidateBusinessMails:
         with open(data_set_path, 'r') as f:
             data_set = list(map(lambda domain: domain.strip(
                 '\n').strip(' ').lower(), f.readlines()))
-        if email.strip('\n').strip(' ').lower() in data_set:
+        if email.strip('\n').strip(' ').lower().split('@')[-1] in data_set:
             raise InvalidBusinessMail(email)
         else:
             raise ValidBusinessEmail(email)
@@ -101,7 +101,7 @@ class ValidateBusinessMails:
         with open(data_set_path, 'r') as f:
             data_set = list(map(lambda domain: domain.strip(
                 '\n').strip(' ').lower(), f.readlines()))
-        if email.strip('\n').strip(' ').lower() in data_set:
+        if email.strip('\n').strip(' ').lower().split('@')[-1] in data_set:
             return False
         else:
             return True

@@ -16,5 +16,5 @@ This is a utility class to validate email address in a provided file.
         validator.validator("abc@dot.com");
     
 ## Author Details
-  [Kumar Aggarwal](https://github.com/kaggrwal) on 17th October, 2021.
+  [Kumar Aggarwal](https://github.com/kaggrwal) on 2nd October, 2021.
 

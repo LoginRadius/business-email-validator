@@ -1,0 +1,25 @@
+{
+  "name": "businessemailvalidator",
+  "version": "1.0.0",
+  "description": "This is a business email validator by LoginRadius",
+  "main": "businessEmailValidator.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LoginRadius/business-email-validator.git"
+  },
+  "keywords": [
+    "email-validator",
+    "https://github.com/LoginRadius/business-email-validator/",
+    "fake-email-finder"
+  ],
+  "author": "LoginRadius",
+  "license": "GPL-2.0",
+  "bugs": {
+    "url": "https://github.com/LoginRadius/business-email-validator/issues"
+  },
+  "homepage": "https://github.com/LoginRadius/business-email-validator#readme"
+}

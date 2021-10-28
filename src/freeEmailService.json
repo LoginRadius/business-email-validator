@@ -5958,7 +5958,13 @@
     "netc.pl": true,
     "netcmail.com": true,
     "perso.be": true,
-    "disposable_emails_dns_down.txt": true,
-    "disposable_emails_dns_up.txt": true,
+ 	"infomagic.com":true,
+	"vyaparys.com":true,
+	"wattpad.com":true,
+	"aileensoul.com":true,
+	"locanto.net":true,
+	"callme.co.in":true,
+	"clickinfone.com":true,
+	"ypquick.com":true,
     "mxlookup.rb": true
 }

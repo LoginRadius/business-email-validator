@@ -29,8 +29,3 @@ function validate(email)
     end
     return false
 end
-
-
-# println(validate("hello@gmail.com")) # true
-# println(validate("@hello@gmail.com")) # true
-# println(validate("hello@hello")) # false

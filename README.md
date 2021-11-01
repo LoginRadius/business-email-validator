@@ -2,13 +2,13 @@
 
 ## Introduction
 
-Help you to eliminate free email services in signup process to capture more potential customer for your business.
+We help you to eliminate free email services in signup process inorder to capture more potential customers for your business.
 
 ## Contribution
 
-We appreciate all kinds of contributions from anyone, be it finding an issue or writing a blog.
+We do appreciate all kinds of contribution from anyone, be it finding an issue or writing a blog.
 
-Please check the [contributing guide](CONTRIBUTING.md) to become a contributor.
+Kindly check the [contributing guide](CONTRIBUTING.md) to become a contributor.
 
 ## TODO
 
@@ -18,7 +18,7 @@ Please check the [contributing guide](CONTRIBUTING.md) to become a contributor.
 
 ## License
 
-For more information on licensing, please refer to [License](https://github.com/LoginRadius/business-email-validator/blob/master/LICENSE)
+For more information on licensing, feel free to refer to [License](https://github.com/LoginRadius/business-email-validator/blob/master/LICENSE)
 
 ---
 
